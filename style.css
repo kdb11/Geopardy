@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5em;
+    font-family:'Sora', sans-serif;
+}
+
+body {
+    background-color: skyblue;
+}
+
+#logoText {
+    position: absolute;
+    top: 0px;
+    margin: 50px;
+    color: blueviolet;
+}
+
+.score {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 50px;
+}
+
+.gameBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 200px;
+    margin-bottom: 0px;
+}
+
+p { 
+    height: 10vh;
+    width: 10vw;
+    margin: 20px;
+    justify-content: center;
+    background-color: green;
+    text-align: center;
+}
+
+span {
+    position: relative;
+    top: 40%;
+}
