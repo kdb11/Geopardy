@@ -27,7 +27,7 @@ body {
 }
 
 .points{
-    background-color: chartreuse;
+    background: rgba(0, 0, 0, 0.0)
 }
 
 .gameBox {
