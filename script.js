@@ -34,6 +34,6 @@ function getApi () {
     }
     console.log(apiData)
     /* console.log(apiDataId) */
-}, 2000);
+}, 1500);
 
 
