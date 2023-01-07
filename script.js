@@ -1,6 +1,12 @@
 
 let apiData;
 let apiDataId = [];
+let newCategory;
+let categoryTitel1 = document.getElementById('categoryTitel1');
+let categoryTitel2 = document.getElementById('categoryTitel2');
+let categoryTitel3 = document.getElementById('categoryTitel3');
+let categoryTitel4 = document.getElementById('categoryTitel4');
+let categoryTitel5 = document.getElementById('categoryTitel5');
 
 
   await fetch('https://jservice.io/api/clues')
@@ -12,15 +18,20 @@ let apiDataId = [];
         apiDataId.push({id: apiData[i].category.id , category: apiData[i].category.title});
       }
       
-       const newCategory = apiDataId.filter(function(item, index){
+       newCategory = apiDataId.filter(function(item, index){
         return index === apiDataId.findIndex(function(obj) {
           return JSON.stringify(item) === JSON.stringify(obj);
         })
       })
       console.log(newCategory)
+
+      /* setTimeout (categoryTitel1 = newCategory[i].category, 5000); */
     }
     console.log(apiData)
 
 
-
-
+categoryTitel1.innerHTML = newCategory[0].category;
+categoryTitel2.innerHTML = newCategory[1].category;
+categoryTitel3.innerHTML = newCategory[2].category;
+categoryTitel4.innerHTML = newCategory[3].category;
+categoryTitel5.innerHTML = newCategory[4].category;
