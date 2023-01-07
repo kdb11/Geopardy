@@ -1,5 +1,6 @@
 
 let apiData;
+/* let apiDataId = []; */
 let apiDataId = [];
 let i = 0;
 
@@ -13,15 +14,21 @@ function getApi () {
 
   getApi();
 
-  setTimeout((data) => {
+  setTimeout(() => {
     /* console.log(data[i].category.title);
     JSON.parse(apiData) */
     for (let i = 0; i < 100; i++) {
-      if (apiData[i].category.clues_count > 10 ) {
-        apiDataId.push((apiData[i].category.id),(apiData[i].category.title));
-        console.log(apiDataId)
+      if (apiData[i].category.clues_count > 9) {
+        /* apiDataId.push((apiData[i].category.id),(apiData[i].category.title)); */
+        apiDataId.push({id: apiData[i].category.id , category: apiData[i].category.title});
       }
       
+       const newCategory = apiDataId.filter(function(item, index){
+        return index === apiDataId.findIndex(function(obj) {
+          return JSON.stringify(item) === JSON.stringify(obj);
+        })
+      })
+      console.log(newCategory)
       /* apiDataId = apiData[i].category.title;
       console.log(apiDataId) */
     }
