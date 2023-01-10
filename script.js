@@ -2,6 +2,8 @@
 let apiData;
 let apiDataId = [];
 let newCategory;
+
+let submitBtn = document.getElementById("submitBtn");
 let categoryTitel1 = document.getElementById('categoryTitel1');
 let categoryTitel2 = document.getElementById('categoryTitel2');
 let categoryTitel3 = document.getElementById('categoryTitel3');
@@ -54,7 +56,7 @@ let fifth5 = document.getElementById('5-5');
 
       /* setTimeout (categoryTitel1 = newCategory[i].category, 5000); */
     }
-    /* console.log(apiData) */
+     console.log(apiData) 
 
 
 categoryTitel1.innerHTML = newCategory[0].category;
@@ -78,7 +80,13 @@ categoryTitel5.innerHTML = newCategory[4].category;
               first5.innerHTML = data.clues[4].value;
                
            });
+           
+           first1.addEventListener("click", test )
 
+           function test () {
+            document.getElementById('questionBox').style.display = "block";
+           }   
+           
         fetch(`https://jservice.io/api/category?id=${newCategory[1].id}`)
            .then(response => response.json())
            .then(data => {console.log(data);
