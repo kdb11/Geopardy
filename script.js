@@ -41,6 +41,7 @@ let submitBtn = document.getElementById("submitBtn");
       document.getElementById('questionBox').style.display = "none";
       document.getElementById('gameBox').style.display = "flex";
       /* alert("wrong answer"); */
+      localStorage.clear();
    }
    submitBtn.addEventListener("click", returnSubmitBtn);
 
@@ -103,6 +104,9 @@ let submitBtn = document.getElementById("submitBtn");
             document.getElementById('questionText').innerHTML = data.clues[0].question;
             first1.innerHTML = "";
             first1.removeEventListener("click", q11);
+            first1.style.pointerEvents = "none";
+            localStorage.setItem('questionValue',data.clues[0].value)
+            localStorage.setItem('answer',data.clues[0].answer)
            }   
 
            function q12 () {
@@ -111,6 +115,9 @@ let submitBtn = document.getElementById("submitBtn");
             document.getElementById('questionText').innerHTML = data.clues[1].question;
             first2.innerHTML = "";
             first2.removeEventListener("click", q12);
+            first2.style.pointerEvents = "none";
+            localStorage.setItem('questionValue',data.clues[1].value)
+            localStorage.setItem('answer',data.clues[1].answer)
            }   
            function q13 () {
             document.getElementById('questionBox').style.display = "block";
@@ -118,6 +125,9 @@ let submitBtn = document.getElementById("submitBtn");
             document.getElementById('questionText').innerHTML = data.clues[2].question;
             first3.innerHTML = "";
             first3.removeEventListener("click", q13);
+            first3.style.pointerEvents = "none";
+            localStorage.setItem('questionValue',data.clues[2].value)
+            localStorage.setItem('answer',data.clues[2].answer)
            }   
            function q14 () {
             document.getElementById('questionBox').style.display = "block";
@@ -125,6 +135,9 @@ let submitBtn = document.getElementById("submitBtn");
             document.getElementById('questionText').innerHTML = data.clues[3].question;
             first4.innerHTML = "";
             first4.removeEventListener("click", q14);
+            first4.style.pointerEvents = "none";
+            localStorage.setItem('questionValue',data.clues[3].value)
+            localStorage.setItem('answer',data.clues[3].answer)
            }   
            function q15 () {
             document.getElementById('questionBox').style.display = "block";
@@ -132,6 +145,9 @@ let submitBtn = document.getElementById("submitBtn");
             document.getElementById('questionText').innerHTML = data.clues[4].question;
             first5.innerHTML = "";
             first5.removeEventListener("click", q15);
+            first5.style.pointerEvents = "none";
+            localStorage.setItem('questionValue',data.clues[4].value)
+            localStorage.setItem('answer',data.clues[4].answer)
            }  
 
          });
@@ -159,6 +175,9 @@ let submitBtn = document.getElementById("submitBtn");
             document.getElementById('questionText').innerHTML = data.clues[0].question;
             second1.innerHTML = "";
             second1.removeEventListener("click", q21)
+            second1.style.pointerEvents = "none";
+            localStorage.setItem('questionValue',data.clues[0].value)
+            localStorage.setItem('answer',data.clues[0].answer)
            }   
            function q22 () {
             document.getElementById('questionBox').style.display = "block";
@@ -166,6 +185,9 @@ let submitBtn = document.getElementById("submitBtn");
             document.getElementById('questionText').innerHTML = data.clues[1].question;
             second2.innerHTML = "";
             second2.removeEventListener("click", q22)
+            second2.style.pointerEvents = "none";
+            localStorage.setItem('questionValue',data.clues[1].value)
+            localStorage.setItem('answer',data.clues[1].answer)
            }   
            function q23 () {
             document.getElementById('questionBox').style.display = "block";
@@ -173,6 +195,9 @@ let submitBtn = document.getElementById("submitBtn");
             document.getElementById('questionText').innerHTML = data.clues[2].question;
             second3.innerHTML = "";
             second3.removeEventListener("click", q23)
+            second3.style.pointerEvents = "none";
+            localStorage.setItem('questionValue',data.clues[2].value)
+            localStorage.setItem('answer',data.clues[2].answer)
            }   
            function q24 () {
             document.getElementById('questionBox').style.display = "block";
@@ -180,6 +205,9 @@ let submitBtn = document.getElementById("submitBtn");
             document.getElementById('questionText').innerHTML = data.clues[3].question;
             second4.innerHTML = "";
             second4.removeEventListener("click", q24)
+            second4.style.pointerEvents = "none";
+            localStorage.setItem('questionValue',data.clues[3].value)
+            localStorage.setItem('answer',data.clues[3].answer)
            }   
            function q25 () {
             document.getElementById('questionBox').style.display = "block";
@@ -187,6 +215,9 @@ let submitBtn = document.getElementById("submitBtn");
             document.getElementById('questionText').innerHTML = data.clues[4].question;
             second5.innerHTML = "";
             second5.removeEventListener("click", q25)
+            second5.style.pointerEvents = "none";
+            localStorage.setItem('questionValue',data.clues[4].value)
+            localStorage.setItem('answer',data.clues[4].answer)
            }
 
          });
@@ -213,6 +244,9 @@ let submitBtn = document.getElementById("submitBtn");
             document.getElementById('questionText').innerHTML = data.clues[0].question;
             third1.innerHTML = "";
             third1.removeEventListener("click", q31)
+            third1.style.pointerEvents = "none";
+            localStorage.setItem('questionValue',data.clues[0].value)
+            localStorage.setItem('answer',data.clues[0].answer)
            }   
            function q32 () {
             document.getElementById('questionBox').style.display = "block";
@@ -220,6 +254,9 @@ let submitBtn = document.getElementById("submitBtn");
             document.getElementById('questionText').innerHTML = data.clues[1].question;
             third2.innerHTML = "";
             third2.removeEventListener("click", q32)
+            third2.style.pointerEvents = "none";
+            localStorage.setItem('questionValue',data.clues[1].value)
+            localStorage.setItem('answer',data.clues[1].answer)
            }   
            function q33 () {
             document.getElementById('questionBox').style.display = "block";
@@ -227,6 +264,9 @@ let submitBtn = document.getElementById("submitBtn");
             document.getElementById('questionText').innerHTML = data.clues[2].question;
             third3.innerHTML = "";
             third3.removeEventListener("click", q33)
+            third3.style.pointerEvents = "none";
+            localStorage.setItem('questionValue',data.clues[2].value)
+            localStorage.setItem('answer',data.clues[2].answer)
            }   
            function q34 () {
             document.getElementById('questionBox').style.display = "block";
@@ -234,6 +274,9 @@ let submitBtn = document.getElementById("submitBtn");
             document.getElementById('questionText').innerHTML = data.clues[3].question;
             third4.innerHTML = "";
             third4.removeEventListener("click", q34)
+            third4.style.pointerEvents = "none";
+            localStorage.setItem('questionValue',data.clues[3].value)
+            localStorage.setItem('answer',data.clues[3].answer)
            }   
            function q35 () {
             document.getElementById('questionBox').style.display = "block";
@@ -241,6 +284,9 @@ let submitBtn = document.getElementById("submitBtn");
             document.getElementById('questionText').innerHTML = data.clues[4].question;
             third5.innerHTML = "";
             third5.removeEventListener("click", q35)
+            third5.style.pointerEvents = "none";
+            localStorage.setItem('questionValue',data.clues[4].value)
+            localStorage.setItem('answer',data.clues[4].answer)
            }
 
          });
@@ -267,6 +313,9 @@ let submitBtn = document.getElementById("submitBtn");
             document.getElementById('questionText').innerHTML = data.clues[0].question;
             fourth1.innerHTML = "";
             fourth1.removeEventListener("click", q41)
+            fourth1.style.pointerEvents = "none";
+            localStorage.setItem('questionValue',data.clues[0].value)
+            localStorage.setItem('answer',data.clues[0].answer)
            }   
            function q42 () {
             document.getElementById('questionBox').style.display = "block";
@@ -274,6 +323,9 @@ let submitBtn = document.getElementById("submitBtn");
             document.getElementById('questionText').innerHTML = data.clues[1].question;
             fourth2.innerHTML = "";
             fourth2.removeEventListener("click", q42)
+            fourth2.style.pointerEvents = "none";
+            localStorage.setItem('questionValue',data.clues[1].value)
+            localStorage.setItem('answer',data.clues[1].answer)
            }   
            function q43 () {
             document.getElementById('questionBox').style.display = "block";
@@ -281,6 +333,9 @@ let submitBtn = document.getElementById("submitBtn");
             document.getElementById('questionText').innerHTML = data.clues[2].question;
             fourth3.innerHTML = "";
             fourth3.removeEventListener("click", q43)
+            fourth3.style.pointerEvents = "none";
+            localStorage.setItem('questionValue',data.clues[2].value)
+            localStorage.setItem('answer',data.clues[2].answer)
            }   
            function q44 () {
             document.getElementById('questionBox').style.display = "block";
@@ -288,6 +343,9 @@ let submitBtn = document.getElementById("submitBtn");
             document.getElementById('questionText').innerHTML = data.clues[3].question;
             fourth4.innerHTML = "";
             fourth4.removeEventListener("click", q44)
+            fourth4.style.pointerEvents = "none";
+            localStorage.setItem('questionValue',data.clues[3].value)
+            localStorage.setItem('answer',data.clues[3].answer)
            }   
            function q45 () {
             document.getElementById('questionBox').style.display = "block";
@@ -295,6 +353,9 @@ let submitBtn = document.getElementById("submitBtn");
             document.getElementById('questionText').innerHTML = data.clues[4].question;
             fourth5.innerHTML = "";
             fourth5.removeEventListener("click", q45)
+            fourth5.style.pointerEvents = "none";
+            localStorage.setItem('questionValue',data.clues[4].value)
+            localStorage.setItem('answer',data.clues[4].answer)
            }
 
          });
@@ -321,6 +382,9 @@ let submitBtn = document.getElementById("submitBtn");
             document.getElementById('questionText').innerHTML = data.clues[0].question;
             fifth1.innerHTML = "";
             fifth1.removeEventListener("click", q51)
+            fifth1.style.pointerEvents = "none";
+            localStorage.setItem('questionValue',data.clues[0].value)
+            localStorage.setItem('answer',data.clues[0].answer)
            }   
            function q52 () {
             document.getElementById('questionBox').style.display = "block";
@@ -328,6 +392,9 @@ let submitBtn = document.getElementById("submitBtn");
             document.getElementById('questionText').innerHTML = data.clues[1].question;
             fifth2.innerHTML = "";
             fifth2.removeEventListener("click", q52)
+            fifth2.style.pointerEvents = "none";
+            localStorage.setItem('questionValue',data.clues[1].value)
+            localStorage.setItem('answer',data.clues[1].answer)
            }   
            function q53 () {
             document.getElementById('questionBox').style.display = "block";
@@ -335,6 +402,9 @@ let submitBtn = document.getElementById("submitBtn");
             document.getElementById('questionText').innerHTML = data.clues[2].question;
             fifth3.innerHTML = "";
             fifth3.removeEventListener("click", q53)
+            fifth3.style.pointerEvents = "none";
+            localStorage.setItem('questionValue',data.clues[2].value)
+            localStorage.setItem('answer',data.clues[2].answer)
            }   
            function q54 () {
             document.getElementById('questionBox').style.display = "block";
@@ -342,6 +412,9 @@ let submitBtn = document.getElementById("submitBtn");
             document.getElementById('questionText').innerHTML = data.clues[3].question;
             fifth4.innerHTML = "";
             fifth4.removeEventListener("click", q54)
+            fifth4.style.pointerEvents = "none";
+            localStorage.setItem('questionValue',data.clues[3].value)
+            localStorage.setItem('answer',data.clues[3].answer)
            }   
            function q55 () {
             document.getElementById('questionBox').style.display = "block";
@@ -349,6 +422,9 @@ let submitBtn = document.getElementById("submitBtn");
             document.getElementById('questionText').innerHTML = data.clues[4].question;
             fifth5.innerHTML = "";
             fifth5.removeEventListener("click", q55);
+            fifth5.style.pointerEvents = "none";
+            localStorage.setItem('questionValue',data.clues[4].value)
+            localStorage.setItem('answer',data.clues[4].answer)
            }
            
          });
