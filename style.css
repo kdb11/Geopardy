@@ -6,8 +6,15 @@
     font-family:'Sora', sans-serif;
 }
 
+:root {
+    --hue: 0;
+    --saturation: 90%;
+    --forground-color: hsl(var(--hue), var(--saturation), 75%);
+    --background-color: hsl(var(--hue), var(--saturation), 85%);
+}
+
 body {
-    background-color: skyblue;
+    background-color: var(--background-color);
 }
 
 #logoText {
@@ -27,10 +34,10 @@ body {
 }
 
 .points{
-    background: rgba(0, 0, 0, 0.0)
+    background: rgba(0, 0, 0, 0.0);
 }
 
-.gameBox {
+#gameBox {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -41,15 +48,14 @@ body {
 p { 
     height: 10vh;
     width: 10vw;
-    margin: 20px;
     justify-content: center;
     background-color: green;
     text-align: center;
 }
 
-span {
+.centerText {
+    margin: 20px;
     position: relative;
-    top: 40%;
 }
 
 #questionBox {
@@ -61,6 +67,7 @@ span {
 }
 
 #questionText {
+    background-color: lightslategrey;
     display: flex;
     position: relative;
     font-size: 50px;
