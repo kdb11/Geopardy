@@ -51,6 +51,7 @@ let points = document.getElementById("points");
         alert("wrong answer, the correct answer was" + " " + localStorage.getItem("answer"));
       }
       localStorage.clear();
+      document.querySelector('input').value = "";
    }
    submitBtn.addEventListener("click", returnSubmitBtn);
    
