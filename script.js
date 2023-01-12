@@ -96,12 +96,38 @@ let points = document.getElementById("points");
            .then(response => response.json())
            .then(data => {console.log(data);
 
+            if (data.clues[0].value == null) {
+              first1.innerHTML = "100";
+              data.clues[0].value = 100;
+              console.log("null");
+            } 
+            if (data.clues[1].value == null) {
+              first2.innerHTML = "200";
+              data.clues[1].value = 200;
+              console.log("null");
+            } 
+            if (data.clues[2].value == null) {
+              first3.innerHTML = "300";
+              data.clues[2].value = 300;
+              console.log("null");
+            } 
+            if (data.clues[3].value == null) {
+              first4.innerHTML = "400";
+              data.clues[3].value = 400;
+              console.log("null");
+            } 
+            if (data.clues[4].value == null) {
+              first5.innerHTML = "500";
+              data.clues[4].value = 500;
+              console.log("null");
+            }
+
             first1.innerHTML = data.clues[0].value;
             first2.innerHTML = data.clues[1].value;
             first3.innerHTML = data.clues[2].value;
             first4.innerHTML = data.clues[3].value;
             first5.innerHTML = data.clues[4].value;
-               
+
             first1.addEventListener("click", q11 )
             first2.addEventListener("click", q12 )
             first3.addEventListener("click", q13 )
@@ -166,6 +192,32 @@ let points = document.getElementById("points");
          fetch(`https://jservice.io/api/category?id=${newCategory[1].id}`)
            .then(response => response.json())
            .then(data => {console.log(data);
+
+            if (data.clues[0].value == null) {
+              second1.innerHTML = "100";
+              data.clues[0].value = 100;
+              console.log("null");
+            } 
+            if (data.clues[1].value == null) {
+              second2.innerHTML = "200";
+              data.clues[1].value = 200;
+              console.log("null");
+            } 
+            if (data.clues[2].value == null) {
+              second3.innerHTML = "300";
+              data.clues[2].value = 300;
+              console.log("null");
+            } 
+            if (data.clues[3].value == null) {
+              second4.innerHTML = "400";
+              data.clues[3].value = 400;
+              console.log("null");
+            } 
+            if (data.clues[4].value == null) {
+              second5.innerHTML = "500";
+              data.clues[4].value = 500;
+              console.log("null");
+            }
 
             second1.innerHTML = data.clues[0].value;
             second2.innerHTML = data.clues[1].value;
@@ -236,6 +288,32 @@ let points = document.getElementById("points");
            .then(response => response.json())
            .then(data => {console.log(data);
 
+            if (data.clues[0].value == null) {
+              third1.innerHTML = "100";
+              data.clues[0].value = 100;
+              console.log("null");
+            } 
+            if (data.clues[1].value == null) {
+              third2.innerHTML = "200";
+              data.clues[1].value = 200;
+              console.log("null");
+            } 
+            if (data.clues[2].value == null) {
+              third3.innerHTML = "300";
+              data.clues[2].value = 300;
+              console.log("null");
+            } 
+            if (data.clues[3].value == null) {
+              third4.innerHTML = "400";
+              data.clues[3].value = 400;
+              console.log("null");
+            } 
+            if (data.clues[4].value == null) {
+              third5.innerHTML = "500";
+              data.clues[4].value = 500;
+              console.log("null");
+            }
+
             third1.innerHTML = data.clues[0].value;
             third2.innerHTML = data.clues[1].value;
             third3.innerHTML = data.clues[2].value;
@@ -305,6 +383,32 @@ let points = document.getElementById("points");
            .then(response => response.json())
            .then(data => {console.log(data);
 
+            if (data.clues[0].value == null) {
+              fourth1.innerHTML = "100";
+              data.clues[0].value = 100;
+              console.log("null");
+            } 
+            if (data.clues[1].value == null) {
+              fourth2.innerHTML = "200";
+              data.clues[1].value = 200;
+              console.log("null");
+            } 
+            if (data.clues[2].value == null) {
+              fourth3.innerHTML = "300";
+              data.clues[2].value = 300;
+              console.log("null");
+            } 
+            if (data.clues[3].value == null) {
+              fourth4.innerHTML = "400";
+              data.clues[3].value = 400;
+              console.log("null");
+            } 
+            if (data.clues[4].value == null) {
+              fourth5.innerHTML = "500";
+              data.clues[4].value = 500;
+              console.log("null");
+            }
+
             fourth1.innerHTML = data.clues[0].value;
             fourth2.innerHTML = data.clues[1].value;
             fourth3.innerHTML = data.clues[2].value;
@@ -373,6 +477,32 @@ let points = document.getElementById("points");
          fetch(`https://jservice.io/api/category?id=${newCategory[4].id}`)
            .then(response => response.json())
            .then(data => {console.log(data);
+
+            if (data.clues[0].value == null) {
+              fifth1.innerHTML = "100";
+              data.clues[0].value = 100;
+              console.log("null");
+            } 
+            if (data.clues[1].value == null) {
+              fifth2.innerHTML = "200";
+              data.clues[1].value = 200;
+              console.log("null");
+            } 
+            if (data.clues[2].value == null) {
+              fifth3.innerHTML = "300";
+              data.clues[2].value = 300;
+              console.log("null");
+            } 
+            if (data.clues[3].value == null) {
+              fifth4.innerHTML = "400";
+              data.clues[3].value = 400;
+              console.log("null");
+            } 
+            if (data.clues[4].value == null) {
+              fifth5.innerHTML = "500";
+              data.clues[4].value = 500;
+              console.log("null");
+            }
 
             fifth1.innerHTML = data.clues[0].value;
             fifth2.innerHTML = data.clues[1].value;
