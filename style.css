@@ -9,7 +9,9 @@
 :root {
     --hue: 0;
     --saturation: 90%;
+    --foreground-color: hsl(var(--hue), var(--saturation), 40%);
     --background-color: hsl(var(--hue), var(--saturation), 85%);
+    --hover-color: hsl(var(--hue), var(--saturation), 65%);
 }
 
 body {
@@ -92,7 +94,7 @@ p {
   background-color: #FFFFFF;
   border-radius: 40em;
   border-style: none;
-  box-shadow: #ADCFFF 0 -12px 6px inset;
+  box-shadow: var(--foreground-color) 0 -12px 6px inset;
   box-sizing: border-box;
   color: #000000;
   cursor: pointer;
@@ -116,8 +118,8 @@ p {
 }
 
 .cards:hover {
-  background-color: #FFC229;
-  box-shadow: #FF6314 0 -6px 8px inset;
+  background-color: var(--hover-color);
+  box-shadow: var(--foreground-color) 0 -6px 8px inset;
   transform: scale(1.125);
 }
 
