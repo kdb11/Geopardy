@@ -36,15 +36,24 @@ let fifth4 = document.getElementById('5-4');
 let fifth5 = document.getElementById('5-5');
 
 let submitBtn = document.getElementById("submitBtn");
+let points = document.getElementById("points");
 
    function returnSubmitBtn () {
       document.getElementById('questionBox').style.display = "none";
       document.getElementById('gameBox').style.display = "flex";
-      /* alert("wrong answer"); */
+
+      let playerScore = +points.innerHTML + +localStorage.getItem("questionValue");
+
+      if (document.querySelector('input').value == localStorage.getItem("answer")) {
+        points.innerHTML = playerScore;
+         alert("Correct!");
+      } else {
+        alert("wrong answer, the correct answer was" + " " + localStorage.getItem("answer"));
+      }
       localStorage.clear();
    }
    submitBtn.addEventListener("click", returnSubmitBtn);
-
+   
    let lastTime
    function update(time) {
       if(lastTime != null) {
@@ -427,6 +436,6 @@ let submitBtn = document.getElementById("submitBtn");
             localStorage.setItem('answer',data.clues[4].answer)
            }
            
-         });
+        });
 
 

@@ -39,9 +39,9 @@ body {
     margin: 50px;
 }
 
-.points{
+/* #points{
     background: rgba(0, 0, 0, 0.0);
-}
+} */
 
 #gameBox {
     display: flex;
@@ -109,6 +109,7 @@ p {
   -webkit-user-select: none;
   touch-action: manipulation;
   margin: 8px;
+  width: 300px;
 }
 
 .cards:hover {
@@ -130,7 +131,5 @@ p {
 
 #categoryTitel2, #categoryTitel1, #categoryTitel3, #categoryTitel4, #categoryTitel5 {
     pointer-events: none;
-/*     width: 300px;
-    position: relative;
-    right: 17%; */
+    font-size: 20px bold;
 }
