@@ -34,13 +34,6 @@ body {
     font-weight: bold;
 }
 
-.score {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    margin: 50px;
-}
-
 /* #points{
     background: rgba(0, 0, 0, 0.0);
 } */
@@ -53,13 +46,15 @@ body {
     margin-bottom: 0px;
 }
 
-p { 
-    height: 10vh;
-    width: 10vw;
-    justify-content: center;
-    text-align: center;
+.score {
+    display: flex;
+    position: absolute;
+    top: 100px;
+    right: 200px;
+    height: max-content;
+    width: max-content;
+    font-size: 50px;
 }
-
 
 #questionBox {
     display: none;
@@ -82,6 +77,8 @@ p {
     flex-direction: column;
     margin-bottom: 50px;
     -webkit-text-stroke: 2px black;
+    justify-content: center;
+    text-align: center;
 }
 
 #answerBox, #submitBtn {
@@ -115,7 +112,10 @@ p {
   -webkit-user-select: none;
   touch-action: manipulation;
   margin: 8px;
+  height: 10vh;
   width: 300px;
+  justify-content: center;
+  text-align: center;
 }
 
 .cards:hover {
