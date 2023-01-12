@@ -12,6 +12,7 @@
     --foreground-color: hsl(var(--hue), var(--saturation), 40%);
     --background-color: hsl(var(--hue), var(--saturation), 85%);
     --hover-color: hsl(var(--hue), var(--saturation), 65%);
+    --hovershadow-color: hsl(var(--hue), var(--saturation), 25%);
 }
 
 body {
@@ -119,7 +120,7 @@ p {
 
 .cards:hover {
   background-color: var(--hover-color);
-  box-shadow: var(--foreground-color) 0 -6px 8px inset;
+  box-shadow: var(--hovershadow-color) 0 -6px 8px inset;
   transform: scale(1.125);
 }
 
