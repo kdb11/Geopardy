@@ -139,6 +139,7 @@ let points = document.getElementById("points");
             document.getElementById('gameBox').style.display = "none";
             document.getElementById('questionText').innerHTML = data.clues[0].question;
             first1.innerHTML = "";
+            first1.style.opacity = 0;
             first1.removeEventListener("click", q11);
             first1.style.pointerEvents = "none";
             localStorage.setItem('questionValue',data.clues[0].value)
@@ -150,6 +151,7 @@ let points = document.getElementById("points");
             document.getElementById('gameBox').style.display = "none";
             document.getElementById('questionText').innerHTML = data.clues[1].question;
             first2.innerHTML = "";
+            first2.style.opacity = 0;
             first2.removeEventListener("click", q12);
             first2.style.pointerEvents = "none";
             localStorage.setItem('questionValue',data.clues[1].value)
@@ -160,6 +162,7 @@ let points = document.getElementById("points");
             document.getElementById('gameBox').style.display = "none";
             document.getElementById('questionText').innerHTML = data.clues[2].question;
             first3.innerHTML = "";
+            first3.style.opacity = 0;
             first3.removeEventListener("click", q13);
             first3.style.pointerEvents = "none";
             localStorage.setItem('questionValue',data.clues[2].value)
@@ -170,6 +173,7 @@ let points = document.getElementById("points");
             document.getElementById('gameBox').style.display = "none";
             document.getElementById('questionText').innerHTML = data.clues[3].question;
             first4.innerHTML = "";
+            first4.style.opacity = 0;
             first4.removeEventListener("click", q14);
             first4.style.pointerEvents = "none";
             localStorage.setItem('questionValue',data.clues[3].value)
@@ -180,6 +184,7 @@ let points = document.getElementById("points");
             document.getElementById('gameBox').style.display = "none";
             document.getElementById('questionText').innerHTML = data.clues[4].question;
             first5.innerHTML = "";
+            first5.style.opacity = 0;
             first5.removeEventListener("click", q15);
             first5.style.pointerEvents = "none";
             localStorage.setItem('questionValue',data.clues[4].value)
@@ -236,6 +241,7 @@ let points = document.getElementById("points");
             document.getElementById('gameBox').style.display = "none";
             document.getElementById('questionText').innerHTML = data.clues[0].question;
             second1.innerHTML = "";
+            second1.style.opacity = 0;
             second1.removeEventListener("click", q21)
             second1.style.pointerEvents = "none";
             localStorage.setItem('questionValue',data.clues[0].value)
@@ -246,6 +252,7 @@ let points = document.getElementById("points");
             document.getElementById('gameBox').style.display = "none";
             document.getElementById('questionText').innerHTML = data.clues[1].question;
             second2.innerHTML = "";
+            second2.style.opacity = 0;
             second2.removeEventListener("click", q22)
             second2.style.pointerEvents = "none";
             localStorage.setItem('questionValue',data.clues[1].value)
@@ -256,6 +263,7 @@ let points = document.getElementById("points");
             document.getElementById('gameBox').style.display = "none";
             document.getElementById('questionText').innerHTML = data.clues[2].question;
             second3.innerHTML = "";
+            second3.style.opacity = 0;
             second3.removeEventListener("click", q23)
             second3.style.pointerEvents = "none";
             localStorage.setItem('questionValue',data.clues[2].value)
@@ -266,6 +274,7 @@ let points = document.getElementById("points");
             document.getElementById('gameBox').style.display = "none";
             document.getElementById('questionText').innerHTML = data.clues[3].question;
             second4.innerHTML = "";
+            second4.style.opacity = 0;
             second4.removeEventListener("click", q24)
             second4.style.pointerEvents = "none";
             localStorage.setItem('questionValue',data.clues[3].value)
@@ -276,6 +285,7 @@ let points = document.getElementById("points");
             document.getElementById('gameBox').style.display = "none";
             document.getElementById('questionText').innerHTML = data.clues[4].question;
             second5.innerHTML = "";
+            second5.style.opacity = 0;
             second5.removeEventListener("click", q25)
             second5.style.pointerEvents = "none";
             localStorage.setItem('questionValue',data.clues[4].value)
@@ -331,6 +341,7 @@ let points = document.getElementById("points");
             document.getElementById('gameBox').style.display = "none";
             document.getElementById('questionText').innerHTML = data.clues[0].question;
             third1.innerHTML = "";
+            third1.style.opacity = 0;
             third1.removeEventListener("click", q31)
             third1.style.pointerEvents = "none";
             localStorage.setItem('questionValue',data.clues[0].value)
@@ -341,6 +352,7 @@ let points = document.getElementById("points");
             document.getElementById('gameBox').style.display = "none";
             document.getElementById('questionText').innerHTML = data.clues[1].question;
             third2.innerHTML = "";
+            third2.style.opacity = 0;
             third2.removeEventListener("click", q32)
             third2.style.pointerEvents = "none";
             localStorage.setItem('questionValue',data.clues[1].value)
@@ -351,6 +363,7 @@ let points = document.getElementById("points");
             document.getElementById('gameBox').style.display = "none";
             document.getElementById('questionText').innerHTML = data.clues[2].question;
             third3.innerHTML = "";
+            third3.style.opacity = 0;
             third3.removeEventListener("click", q33)
             third3.style.pointerEvents = "none";
             localStorage.setItem('questionValue',data.clues[2].value)
@@ -361,6 +374,7 @@ let points = document.getElementById("points");
             document.getElementById('gameBox').style.display = "none";
             document.getElementById('questionText').innerHTML = data.clues[3].question;
             third4.innerHTML = "";
+            third4.style.opacity = 0;
             third4.removeEventListener("click", q34)
             third4.style.pointerEvents = "none";
             localStorage.setItem('questionValue',data.clues[3].value)
@@ -371,6 +385,7 @@ let points = document.getElementById("points");
             document.getElementById('gameBox').style.display = "none";
             document.getElementById('questionText').innerHTML = data.clues[4].question;
             third5.innerHTML = "";
+            third5.style.opacity = 0;
             third5.removeEventListener("click", q35)
             third5.style.pointerEvents = "none";
             localStorage.setItem('questionValue',data.clues[4].value)
@@ -426,6 +441,7 @@ let points = document.getElementById("points");
             document.getElementById('gameBox').style.display = "none";
             document.getElementById('questionText').innerHTML = data.clues[0].question;
             fourth1.innerHTML = "";
+            fourth1.style.opacity = 0;
             fourth1.removeEventListener("click", q41)
             fourth1.style.pointerEvents = "none";
             localStorage.setItem('questionValue',data.clues[0].value)
@@ -436,6 +452,7 @@ let points = document.getElementById("points");
             document.getElementById('gameBox').style.display = "none";
             document.getElementById('questionText').innerHTML = data.clues[1].question;
             fourth2.innerHTML = "";
+            fourth2.style.opacity = 0;
             fourth2.removeEventListener("click", q42)
             fourth2.style.pointerEvents = "none";
             localStorage.setItem('questionValue',data.clues[1].value)
@@ -446,6 +463,7 @@ let points = document.getElementById("points");
             document.getElementById('gameBox').style.display = "none";
             document.getElementById('questionText').innerHTML = data.clues[2].question;
             fourth3.innerHTML = "";
+            fourth3.style.opacity = 0;
             fourth3.removeEventListener("click", q43)
             fourth3.style.pointerEvents = "none";
             localStorage.setItem('questionValue',data.clues[2].value)
@@ -456,6 +474,7 @@ let points = document.getElementById("points");
             document.getElementById('gameBox').style.display = "none";
             document.getElementById('questionText').innerHTML = data.clues[3].question;
             fourth4.innerHTML = "";
+            fourth4.style.opacity = 0;
             fourth4.removeEventListener("click", q44)
             fourth4.style.pointerEvents = "none";
             localStorage.setItem('questionValue',data.clues[3].value)
@@ -466,6 +485,7 @@ let points = document.getElementById("points");
             document.getElementById('gameBox').style.display = "none";
             document.getElementById('questionText').innerHTML = data.clues[4].question;
             fourth5.innerHTML = "";
+            fourth5.style.opacity = 0;
             fourth5.removeEventListener("click", q45)
             fourth5.style.pointerEvents = "none";
             localStorage.setItem('questionValue',data.clues[4].value)
@@ -521,7 +541,8 @@ let points = document.getElementById("points");
             document.getElementById('gameBox').style.display = "none";
             document.getElementById('questionText').innerHTML = data.clues[0].question;
             fifth1.innerHTML = "";
-            fifth1.removeEventListener("click", q51)
+            fifth1.removeEventListener("click", q51);
+            fifth1.style.opacity = 0;
             fifth1.style.pointerEvents = "none";
             localStorage.setItem('questionValue',data.clues[0].value)
             localStorage.setItem('answer',data.clues[0].answer)
@@ -531,6 +552,7 @@ let points = document.getElementById("points");
             document.getElementById('gameBox').style.display = "none";
             document.getElementById('questionText').innerHTML = data.clues[1].question;
             fifth2.innerHTML = "";
+            fifth2.style.opacity = 0;
             fifth2.removeEventListener("click", q52)
             fifth2.style.pointerEvents = "none";
             localStorage.setItem('questionValue',data.clues[1].value)
@@ -541,6 +563,7 @@ let points = document.getElementById("points");
             document.getElementById('gameBox').style.display = "none";
             document.getElementById('questionText').innerHTML = data.clues[2].question;
             fifth3.innerHTML = "";
+            fifth3.style.opacity = 0;
             fifth3.removeEventListener("click", q53)
             fifth3.style.pointerEvents = "none";
             localStorage.setItem('questionValue',data.clues[2].value)
@@ -551,6 +574,7 @@ let points = document.getElementById("points");
             document.getElementById('gameBox').style.display = "none";
             document.getElementById('questionText').innerHTML = data.clues[3].question;
             fifth4.innerHTML = "";
+            fifth4.style.opacity = 0;
             fifth4.removeEventListener("click", q54)
             fifth4.style.pointerEvents = "none";
             localStorage.setItem('questionValue',data.clues[3].value)
@@ -561,6 +585,7 @@ let points = document.getElementById("points");
             document.getElementById('gameBox').style.display = "none";
             document.getElementById('questionText').innerHTML = data.clues[4].question;
             fifth5.innerHTML = "";
+            fifth5.style.opacity = 0;
             fifth5.removeEventListener("click", q55);
             fifth5.style.pointerEvents = "none";
             localStorage.setItem('questionValue',data.clues[4].value)
