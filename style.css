@@ -73,53 +73,47 @@ body {
     text-align: center;
 }
 
-/* #answerBox, #submitBtn {
-    position: relative;
-    left: 45%;
-    top: 40%;
-} */
-
 .cards {
-  appearance: none;
-  background-color: #FFFFFF;
-  border-radius: 40em;
-  border-style: none;
-  box-shadow: var(--foreground-color) 0 -12px 6px inset;
-  box-sizing: border-box;
-  color: var(--foreground-color);
-  -webkit-text-stroke: 1px black;
-  cursor: pointer;
-  display: inline-block;
-  font-family: sans-serif;
-  font-size: 38px;
-  font-weight: 700;
-  letter-spacing: -.24px;
-  margin: 0;
-  outline: none;
-  padding: 1rem 1.3rem;
-  quotes: auto;
-  text-align: center;
-  text-decoration: none;
-  transition: all .15s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  margin: 8px;
-  height: 10vh;
-  width: 300px;
-  justify-content: center;
-  text-align: center;
+    appearance: none;
+    background-color: #FFFFFF;
+    border-radius: 40em;
+    border-style: none;
+    box-shadow: var(--foreground-color) 0 -12px 6px inset;
+    box-sizing: border-box;
+    color: var(--foreground-color);
+    -webkit-text-stroke: 1px black;
+    cursor: pointer;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: -.24px;
+    margin: 0;
+    outline: none;
+    padding: 1rem 1.3rem;
+    quotes: auto;
+    text-align: center;
+    text-decoration: none;
+    transition: all .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin: 8px;
+    height: 10vh;
+    width: 300px;
+    justify-content: center;
+    text-align: center;
 }
 
 .cards:hover {
-  background-color: var(--hover-color);
-  box-shadow: var(--hovershadow-color) 0 -6px 8px inset;
-  transform: scale(1.125);
-  color: var(--hovershadow-color);
+    background-color: var(--hover-color);
+    box-shadow: var(--hovershadow-color) 0 -6px 8px inset;
+    transform: scale(1.125);
+    color: var(--hovershadow-color);
 }
 
 .cards:active {
-  transform: scale(1.025);
+    transform: scale(1.025);
 }
 
 #categoryTitel2, #categoryTitel1, #categoryTitel3, #categoryTitel4, #categoryTitel5 {
