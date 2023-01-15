@@ -34,10 +34,6 @@ body {
     font-weight: bold;
 }
 
-/* #points{
-    background: rgba(0, 0, 0, 0.0);
-} */
-
 #gameBox {
     display: flex;
     flex-direction: row;
@@ -95,11 +91,12 @@ body {
   border-style: none;
   box-shadow: var(--foreground-color) 0 -12px 6px inset;
   box-sizing: border-box;
-  color: #000000;
+  color: var(--foreground-color);
+  -webkit-text-stroke: 1px black;
   cursor: pointer;
   display: inline-block;
-  font-family: -apple-system,sans-serif;
-  font-size: 1.2rem;
+  font-family: sans-serif;
+  font-size: 38px;
   font-weight: 700;
   letter-spacing: -.24px;
   margin: 0;
@@ -123,20 +120,20 @@ body {
   background-color: var(--hover-color);
   box-shadow: var(--hovershadow-color) 0 -6px 8px inset;
   transform: scale(1.125);
+  color: var(--hovershadow-color);
 }
 
 .cards:active {
   transform: scale(1.025);
 }
 
-@media (min-width: 768px) {
-  .cards {
-    font-size: 1.5rem;
-    padding: .75rem 2rem;
-  }
-}
-
 #categoryTitel2, #categoryTitel1, #categoryTitel3, #categoryTitel4, #categoryTitel5 {
     pointer-events: none;
-    font-size: 20px bold;
+    font-size: 23px;
+    /* position: relative;
+    bottom: 10px;
+    color: white;
+    -webkit-text-stroke: 1px black;
+    box-shadow: var(--foreground-color) 1 -12px 6px inset;
+    background-color: var(--background-color); */
 }
