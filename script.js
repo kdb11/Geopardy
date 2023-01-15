@@ -41,6 +41,8 @@ let fifth5 = document.getElementById('5-5');
 let submitBtn = document.getElementById("submitBtn");
 let points = document.getElementById("points");
 
+// Function that checks if answer is correct depending on the correct answer in ls. If so it adds value to score and returns to main page.
+
 function returnSubmitBtn () {
   document.getElementById('questionBox').style.display = "none";
   document.getElementById('gameBox').style.display = "flex";
@@ -61,6 +63,8 @@ function returnSubmitBtn () {
 
 submitBtn.addEventListener("click", returnSubmitBtn);
 
+// Function for changing hue depending on time
+
 let lastTime;
 function update(time) {
   if(lastTime != null) {
@@ -72,6 +76,8 @@ function update(time) {
   window.requestAnimationFrame(update)
 }
 update();
+
+//Fetching first 100 clues and sorts categorys with minimum 9 questions in to new array and removes duplicates from new array
 
 await fetch('https://jservice.io/api/clues')
 .then((response) => response.json())
@@ -92,15 +98,21 @@ await fetch('https://jservice.io/api/clues')
 
 console.log(apiData) 
 
+// Pushes 5 first categorys from new array in to cards
+
 categoryTitel1.innerHTML = newCategory[0].category;
 categoryTitel2.innerHTML = newCategory[1].category;
 categoryTitel3.innerHTML = newCategory[2].category;
 categoryTitel4.innerHTML = newCategory[3].category;
 categoryTitel5.innerHTML = newCategory[4].category;
 
+// Takes first category from first array and fetch questions values and answers
+
 fetch(`https://jservice.io/api/category?id=${newCategory[0].id}`)
 .then(response => response.json())
 .then(data => {console.log(data);
+
+//Checks if value of question are null and if so sets a value from 100-500 to question
 
   if (data.clues[0].value == null) {
     first1.innerHTML = "100";
@@ -128,17 +140,28 @@ fetch(`https://jservice.io/api/category?id=${newCategory[0].id}`)
     console.log("null");
   }
 
+// If there already is a value to the question set that
+
   first1.innerHTML = data.clues[0].value;
   first2.innerHTML = data.clues[1].value;
   first3.innerHTML = data.clues[2].value;
   first4.innerHTML = data.clues[3].value;
   first5.innerHTML = data.clues[4].value;
 
+// Eventlistener for first row that listens to click on cards on first row
+
   first1.addEventListener("click", q11 )
   first2.addEventListener("click", q12 )
   first3.addEventListener("click", q13 )
   first4.addEventListener("click", q14 )
   first5.addEventListener("click", q15 )
+
+/* 
+Function that removes card styling and value inside card after pressed. 
+Shows question view. 
+Also sets Value of question and answer to storage.
+This function is used on every card on first row
+*/
 
   function q11 () {
     document.getElementById('questionBox').style.display = "block";
@@ -197,9 +220,13 @@ fetch(`https://jservice.io/api/category?id=${newCategory[0].id}`)
   }  
 });
 
+// Takes second category from new category array and fetch questions, values and answers
+
 fetch(`https://jservice.io/api/category?id=${newCategory[1].id}`)
 .then(response => response.json())
 .then(data => {console.log(data);
+
+//Checks if value of question are null and if so sets a value from 100-500 to question
 
   if (data.clues[0].value == null) {
     second1.innerHTML = "100";
@@ -227,17 +254,28 @@ fetch(`https://jservice.io/api/category?id=${newCategory[1].id}`)
     console.log("null");
   }
 
+// If there already is a value to the question set that
+
   second1.innerHTML = data.clues[0].value;
   second2.innerHTML = data.clues[1].value;
   second3.innerHTML = data.clues[2].value;
   second4.innerHTML = data.clues[3].value;
   second5.innerHTML = data.clues[4].value;
 
+  // Eventlistener for second row that listens to click on cards on second row
+
   second1.addEventListener("click", q21 )
   second2.addEventListener("click", q22 )
   second3.addEventListener("click", q23 )
   second4.addEventListener("click", q24 )
   second5.addEventListener("click", q25 )
+
+  /* 
+  Function that removes card styling and value inside card after pressed. 
+  Shows question view. 
+  Also sets Value of question and answer to storage.
+  This function is used on every card on second row
+  */
 
   function q21 () {
     document.getElementById('questionBox').style.display = "block";
@@ -296,10 +334,14 @@ fetch(`https://jservice.io/api/category?id=${newCategory[1].id}`)
   }
 });
 
+// Takes third category from new category array and fetch questions, values and answers
+
 fetch(`https://jservice.io/api/category?id=${newCategory[2].id}`)
 .then(response => response.json())
 .then(data => {console.log(data);
 
+//Checks if value of question are null and if so sets a value from 100-500 to question
+  
   if (data.clues[0].value == null) {
     third1.innerHTML = "100";
     data.clues[0].value = 100;
@@ -326,17 +368,28 @@ fetch(`https://jservice.io/api/category?id=${newCategory[2].id}`)
     console.log("null");
   }
 
+  // If there already is a value to the question set that
+
   third1.innerHTML = data.clues[0].value;
   third2.innerHTML = data.clues[1].value;
   third3.innerHTML = data.clues[2].value;
   third4.innerHTML = data.clues[3].value;
   third5.innerHTML = data.clues[4].value;
 
+  // Eventlistener for third row that listens to click on cards on third row
+
   third1.addEventListener("click", q31 )
   third2.addEventListener("click", q32 )
   third3.addEventListener("click", q33 )
   third4.addEventListener("click", q34 )
   third5.addEventListener("click", q35 )
+
+  /* 
+  Function that removes card styling and value inside card after pressed. 
+  Shows question view. 
+  Also sets Value of question and answer to storage.
+  This function is used on every card on third row
+  */
 
   function q31 () {
     document.getElementById('questionBox').style.display = "block";
@@ -395,9 +448,13 @@ fetch(`https://jservice.io/api/category?id=${newCategory[2].id}`)
   }
 });
 
+// Takes fourth category from new category array and fetch questions, values and answers
+
 fetch(`https://jservice.io/api/category?id=${newCategory[3].id}`)
 .then(response => response.json())
 .then(data => {console.log(data);
+
+  //Checks if value of question are null and if so sets a value from 100-500 to question
 
   if (data.clues[0].value == null) {
     fourth1.innerHTML = "100";
@@ -425,17 +482,28 @@ fetch(`https://jservice.io/api/category?id=${newCategory[3].id}`)
     console.log("null");
   }
 
+  // If there already is a value to the question set that
+
   fourth1.innerHTML = data.clues[0].value;
   fourth2.innerHTML = data.clues[1].value;
   fourth3.innerHTML = data.clues[2].value;
   fourth4.innerHTML = data.clues[3].value;
   fourth5.innerHTML = data.clues[4].value;
 
+  // Eventlistener for fourth row that listens to click on cards on fourth row
+
   fourth1.addEventListener("click", q41 )
   fourth2.addEventListener("click", q42 )
   fourth3.addEventListener("click", q43 )
   fourth4.addEventListener("click", q44 )
   fourth5.addEventListener("click", q45 )
+
+  /* 
+  Function that removes card styling and value inside card after pressed. 
+  Shows question view. 
+  Also sets Value of question and answer to storage.
+  This function is used on every card on fourth row
+  */
 
   function q41 () {
     document.getElementById('questionBox').style.display = "block";
@@ -494,9 +562,13 @@ fetch(`https://jservice.io/api/category?id=${newCategory[3].id}`)
   }
 });
 
+// Takes fifth category from new category array and fetch questions, values and answers
+
 fetch(`https://jservice.io/api/category?id=${newCategory[4].id}`)
 .then(response => response.json())
 .then(data => {console.log(data);
+
+//Checks if value of question are null and if so sets a value from 100-500 to question
 
   if (data.clues[0].value == null) {
     fifth1.innerHTML = "100";
@@ -524,17 +596,28 @@ fetch(`https://jservice.io/api/category?id=${newCategory[4].id}`)
     console.log("null");
   }
 
+  // If there already is a value to the question set that
+
   fifth1.innerHTML = data.clues[0].value;
   fifth2.innerHTML = data.clues[1].value;
   fifth3.innerHTML = data.clues[2].value;
   fifth4.innerHTML = data.clues[3].value;
   fifth5.innerHTML = data.clues[4].value;
 
+  // Eventlistener for fifth row that listens to click on cards on fifth row
+
   fifth1.addEventListener("click", q51 )
   fifth2.addEventListener("click", q52 )
   fifth3.addEventListener("click", q53 )
   fifth4.addEventListener("click", q54 )
   fifth5.addEventListener("click", q55 )
+
+  /* 
+  Function that removes card styling and value inside card after pressed. 
+  Shows question view. 
+  Also sets Value of question and answer to storage.
+  This function is used on every card on fifth row
+  */
 
   function q51 () {
     document.getElementById('questionBox').style.display = "block";
