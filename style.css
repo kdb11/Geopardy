@@ -21,17 +21,8 @@ body {
 
 .logoPic {
     position: absolute;
-    top: -200px;
+    top: -100px;
     z-index: -1;
-}
-
-#logoText {
-    position: absolute;
-    top: 0px;
-    margin: 50px;
-    color: blueviolet;
-    font-size: 80px;
-    font-weight: bold;
 }
 
 #gameBox {
@@ -50,6 +41,9 @@ body {
     height: max-content;
     width: max-content;
     font-size: 50px;
+    color: whitesmoke;
+    -webkit-text-stroke: 1px var(--foreground-color);
+    z-index: 2;
 }
 
 #questionBox {
@@ -129,11 +123,40 @@ body {
 
 #categoryTitel2, #categoryTitel1, #categoryTitel3, #categoryTitel4, #categoryTitel5 {
     pointer-events: none;
-    font-size: 23px;
-    /* position: relative;
+    font-size: 25px;
+    position: relative;
     bottom: 10px;
-    color: white;
-    -webkit-text-stroke: 1px black;
-    box-shadow: var(--foreground-color) 1 -12px 6px inset;
-    background-color: var(--background-color); */
+    color: var(--hovershadow-color);
+    background-color: var(--hover-color);
+    box-shadow: var(--hovershadow-color) 0 -6px 8px inset;
 }
+
+/* 
+#alertWrong {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    display: none;
+  }
+
+#alertRight {
+    padding: 20px;
+    background-color: green;
+    color: white;
+    display: none;
+  }
+  
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  } */

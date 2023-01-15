@@ -3,6 +3,9 @@ let apiData;
 let apiDataId = [];
 let newCategory;
 
+/* let alertWrong = document.getElementById('alertWrong');
+let alertRight = document.getElementById('alertWrong'); */
+
 let categoryTitel1 = document.getElementById('categoryTitel1');
 let categoryTitel2 = document.getElementById('categoryTitel2');
 let categoryTitel3 = document.getElementById('categoryTitel3');
@@ -46,9 +49,11 @@ let points = document.getElementById("points");
 
       if (document.querySelector('input').value == localStorage.getItem("answer")) {
         points.innerHTML = playerScore;
+        /* alertRight.style.display = "flex"; */
          alert("Correct!");
       } else {
         alert("wrong answer, the correct answer was" + " " + localStorage.getItem("answer"));
+       /*  alertWrong.style.display = "flex"; */
       }
       localStorage.clear();
       document.querySelector('input').value = "";
