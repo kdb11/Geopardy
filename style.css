@@ -72,11 +72,11 @@ body {
     text-align: center;
 }
 
-#answerBox, #submitBtn {
+/* #answerBox, #submitBtn {
     position: relative;
     left: 45%;
     top: 40%;
-}
+} */
 
 .cards {
   appearance: none;
@@ -129,6 +129,34 @@ body {
     color: var(--hovershadow-color);
     background-color: var(--hover-color);
     box-shadow: var(--hovershadow-color) 0 -6px 8px inset;
+}
+
+
+#answerBox {
+    display: flex;
+    text-align: center;
+    margin-bottom: 25px;
+    height: 40px;
+    width: 300px;
+    border-radius: 10px;
+    position: relative;
+    left: 42.5%;
+    top: 40%;
+}
+
+#submitBtn {
+    position: relative;
+    height: 40px;
+    top: 40%;
+    left: 45.2%;
+    width: 200px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: rgb(24,24,24);
+    color: white;
+    cursor: pointer;
+    box-shadow: black 0 -4px 2px inset;
 }
 
 /* 
