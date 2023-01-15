@@ -69,7 +69,8 @@ body {
     color: white;
     display: flex;
     position: relative;
-    font-size: 50px;
+    font-size: 60px;
+    font-style: bold;
     width: 80%;
     left: 10%;
     top: 40%;
