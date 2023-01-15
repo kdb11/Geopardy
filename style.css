@@ -41,6 +41,7 @@ body {
     height: max-content;
     width: max-content;
     font-size: 50px;
+    font-weight: 700;
     color: whitesmoke;
     -webkit-text-stroke: 1px var(--foreground-color);
     z-index: 2;
